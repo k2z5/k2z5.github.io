@@ -1,0 +1,45 @@
+<div class="product--view">
+    <div class="clearfix">
+        <div class="product-image">
+            <img src="img/products/knife.jpg" alt="" class="zoom-img">
+        </div>
+        <div class="product-symmery">
+            <h3>Bridge Backpack</h3>
+            <div class="product-meta">
+                <div class="meta-options">
+                    <p><img src="img/icons/star.png" alt="product rating"> &nbsp; &nbsp;02 Review(s)</p>
+                    <p>Availability: Available</p>
+                </div>
+                <div class="price">
+                    <span>Price :</span>
+                    <span class="current-price">$690</span>
+                    <span class="old-price">$750</span>
+                </div>
+            </div>
+            <div class="description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias eligendi, explicabo, rerum aperiam, aliquam expedita dolorum placeat ratione pariatur ut suscipit blanditiis, veniam. Blanditiis enim, deleniti amet maxime ea reprehenderit odit labore totam velit, aliquid ab quam ex, laudantium repellendus.</p>
+            </div>
+            <div class="cart-option">
+                <div class="clearfix">
+                    <div class="quantity">
+                        <script>
+                            function increment(myInput) {
+                              myInput.value = (+myInput.value + 1) || 0;
+                            }
+                            function decrement(myInput) {
+                              if (myInput.value >=2)
+                              myInput.value = (myInput.value - 1) || 0;
+                            }
+                        </script>
+                        <span class="qty-control minus" onclick="decrement(this.parentNode.getElementsByTagName('input')[0]);">-</span>
+                        <input type="text" name="qty" class="qty-field" value="1">
+                        <span class="qty-control plus" onclick="increment(this.parentNode.getElementsByTagName('input')[0]);" >+</span>
+                    </div>
+                    <div class="cart-button">
+                        <a href="#" class="btn btn-blue"><i class="icon-cart6"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

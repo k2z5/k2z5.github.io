@@ -1,0 +1,23 @@
+body {
+  background: #434343;
+}
+h1 {
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: #f7e184;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.5px;  
+}
+a {
+  color:navy;
+  background-color: aquamarine;
+  opacity: 0.5;
+}
+a:hover {
+  background-color: aqua;
+}
+pre {
+  color: antiquewhite;
+  white-space:pre-wrap;  
+}

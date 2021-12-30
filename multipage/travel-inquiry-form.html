@@ -1,0 +1,112 @@
+<div class="travel-inquiry-form">
+    <h4 class="subtitle">
+        Use the form below to contact accommodation Villa Maria directly.
+    </h4>
+    <form action="#" class="inquiry-form">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <div class="input-field">
+                    <label for="name"><i class="fa fa-user"></i></label>
+                    <input type="text" name="name" placeholder="Your Name" class="form-control">
+                </div>
+                <div class="input-field">
+                    <label for="email"><i class="fa fa-envelope-o"></i></label>
+                    <input type="email" name="email" placeholder="Email Address" class="form-control">
+                </div>
+                <div class="input-field">
+                    <label for="phone"><i class="fa fa-phone"></i></label>
+                    <input type="text" name="phone" placeholder="Phone" class="form-control">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="input-field">
+                    <label for="message"><i class="fa fa-comments-o"></i></label>
+                    <textarea name="message" class="form-control" placeholder="What would you like to inquire about?"></textarea>
+                </div>                
+            </div>
+            <div class="col-xs-12 col-sm-12">
+                <div class="text-center">
+                    <input type="submit" class="btn btn-blue" value="Submit Inquiry">
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<script>
+    $('input').focusin(function(){
+        $('input').data('holder',$(this).attr('placeholder'));
+        $(this).attr('placeholder','');
+    });
+    $('input').focusout(function(){
+        $(this).attr('placeholder',$(this).data('holder'));
+    });
+    $('textarea').focusin(function(){
+        $('textarea').data('holder',$(this).attr('placeholder'));
+        $(this).attr('placeholder','');
+    });
+    $('textarea').focusout(function(){
+        $(this).attr('placeholder',$(this).data('holder'));
+    });
+
+    $(function() {
+        // inquiry-form validation
+        $(".inquiry-form").validate({
+            rules: {
+                name: {
+                    required: true
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                phone: {
+                    required: true,
+                    minlength: 4,
+                    digits: true
+                    //phoneUS: true    you may use phoneUS instead of digits, if you need us phone varification
+                },
+                message: {
+                    required: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Please enter your name"
+                },
+                email: {
+                    required: "Please enter your email"
+                },
+                phone: {
+                    required: "Please enter phone number",
+                    minlength: "Phone number must be 4 caracter"
+                },
+                email: {
+                    required: "Please enter Your Email"
+                },
+                message: {
+                    required: "Please enter your enquiry here"
+                }
+            },
+            submitHandler: function(form) {
+                $(form).ajaxSubmit({
+                    type:"POST",
+                    data: $(form).serialize(),
+                    url:"quote-form.php",
+                    success: function() {
+                        $(".inquiry-form :input").attr("disabled", "disabled");
+                        $(".inquiry-form").fadeTo( "slow", 0.15, function() {
+                            $(this).find(":input").attr("disabled", "disabled");
+                            $(this).find("label").css("cursor","default");
+                            $("#success").fadeIn();
+                        });
+                    },
+                    error: function() {
+                        $(".inquiry-form").fadeTo( "slow", 0.15, function() {
+                            $("#error").fadeIn();
+                        });
+                    }
+                });
+            }
+        });
+    });
+</script>
