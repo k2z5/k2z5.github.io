@@ -1,0 +1,708 @@
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://zverev.cf/js-css/style3.css">
+        
+<h1 class="about__name">Запись-2021</h1>
+<p class="about__lead">...</p>
+
+<pre>
+Planning Analytics Local Installation and Configuration
+  Introduction
+	  What's new in Planning Analytics
+	  Planning your installation
+		  Software requirements
+		  Available installation programs
+		  Available components
+			  TM1 Data Tier installation components
+			  TM1 Web Tier installation components
+			  TM1 Rich Tier installation components
+			  Additional installation components not listed
+		  TM1 Client Differentiation
+			  End-user clients
+			  Administration clients
+		  Configuration overview
+			  Default installation values
+			  TM1 Server and Cognos Configuration
+			  TM1 configuration files and parameters
+			   User accounts for running TM1 services on Windows
+			  Installing IBM Planning Analytics Local on Networks without domains
+		  Accessibility
+			  Keyboard shortcuts for the installation wizard
+			  Keyboard shortcuts for Cognos Configuration
+	  Planning Analytics Local architecture
+		  Planning Analytics architecture
+			  TM1 Admin Server overview
+			  TM1 Server overview
+			  TM1 files overview
+			  Data directory overview
+		  TM1 Web architecture
+			  Accessing multiple TM1 servers from TM1 Web
+			  Limiting access to a single TM1 Server from TM1 Web
+		  TM1 Applications architecture
+			  TM1 Data Tier: Data
+			  TM1 Web Tier: Application servers
+			  TM1 Rich Tier: Web clients
+	  Deploying Planning Analytics Local
+		  Deploying Planning Analytics on a single Windows computer
+		  Deploying TM1 Admin Server and TM1 Server
+		  Deploying TM1 Applications components on a single computer
+		  Deploying TM1 Applications components on separate computers
+		  Deploying TM1 client applications
+	  Upgrading Planning Analytics Local
+		  Prerequisites for upgrading
+		  Upgrading from Planning Analytics version 2.0.0
+		  Upgrading Planning Analytics for Microsoft Excel
+		  Upgrading from Cognos TM1 version 10.2.x
+	  Installing Planning Analytics Local on a single computer
+		  Install the prerequisite software
+		  Install the basic Planning Analytics components
+		  Use Cognos Configuration to start Planning Analytics components
+		  Run Cognos  TM1 Perspectives
+		  Run Cognos  TM1 Architect
+		  Run Cognos  TM1 Web
+		  Run Cognos  TM1 Application Web
+		  Run Cognos  TM1 Performance Modeler
+		  Run Cognos Insight
+		  Use Cognos  TM1 Application Web
+		  Other Planning Analytics components
+	  Installing the Data Tier
+		  TM1 Server installation
+			  Installing IBM  TM1 Server on Windows
+				  Install IBM  TM1 Server components on Windows
+				  Use Cognos Configuration to start TM1 servers on Windows
+				  Changing TM1 services to run as a specific user account on Windows
+			  Installing IBM  TM1 Server on UNIX or Linux
+				  Install IBM  TM1 Server components on UNIX or Linux
+				  Use Cognos Configuration on UNIX or Linux
+				  Use scripts to start a TM1 Server on UNIX or Linux
+				  Character Encoding for TM1 Object Names on UNIX and Windows Systems
+			  TM1 language configuration
+				  TM1 language codes
+				  Configuring language for the IBM  TM1 Server
+				  Configuring language for TM1 clients on Windows
+			  Advanced TM1 Admin Server and TM1 Server configuration
+				  Creating a new empty TM1 Server in Cognos Configuration
+				  Adding an existing TM1 Server in Cognos Configuration
+				  Specifying the location of the Cognos TM1 Admin Host
+				  Specifying multiple Cognos TM1 Admin Hosts
+				  Changing default port numbers for TM1 Admin Server
+				  Configuring TM1 Server to use IPv6
+			  Monitoring TM1 Server license usage
+		  Cognos  TM1 tools installation
+		  Cognos  TM1 sample databases installation
+			  Using the sample databases installed by default
+			  Using the GO_Contributor and Outdoors Company sample databases
+			  Using the Great Outdoors Sales server samples based on the sample database
+				  Restoring backup files for IBM  Db2
+				  Restoring backup files for Oracle
+				  Restoring backup files for Microsoft SQL Server
+				  Setting up Great Outdoors Sales sample
+			  Upgrading the samples
+		  Install and configure the Planning Analytics Administration agent (local only)
+			  Configure the agent for Windows
+			  Configure the agent for Linux
+			  Configure event notifications
+			  Sample bootstrap.properties file
+	  Installing the Web Tier
+		  TM1 Application Server installation
+			  Install TM1 Application Server
+				  Installing TM1 Web Tier components
+				  Deploying the TM1 Application Server with the provided WebSphere Liberty Profile application server
+				  Configuring authentication security for TM1 Application Web
+				  Configuring the server and client environment for TM1 Application Web
+				  TM1 Application Server settings in Cognos Configuration
+			  Configuring a TM1 Server to work with TM1 Application Web
+				  Determining the URL startup link for TM1 Application Web
+				  Configuring TM1 Application Web
+			  TM1 Application Server advanced installation and configuration
+				  Install TM1 Application Server with your own installation of WebSphere
+					  Building application files for a WebSphere server
+					  Deploying TM1 Application Server to a WebSphere Application Server
+				  Configuring TM1 Application Web to use multiple TM1 Servers
+				  Disabling the X-Frame-Options header
+			  Monitoring TM1 Application Server logs
+		  Cognos  TM1 Web installation
+			  Installing TM1 Web
+				  Install and configure Cognos  TM1 Web on Microsoft  Windows
+				  Install and configure TM1 Web on UNIX
+			  Post-installation configuration
+		  Cognos  TM1 Operations Console installation
+			  Installing Cognos  TM1 Operations Console using the provided WebSphere® Liberty webserver software
+			  Using Cognos Configuration to deploy Cognos  TM1 Operations Console
+			  Advanced Cognos TM1 Operations Console installation
+				  Installing Cognos  TM1 Operations Console on a separate machine
+				  Installing Cognos  TM1 Operations Console to IBM  WebSphere
+					  Deploying Cognos  TM1 Operations Console to use an IBM  WebSphere Application Server
+					  Retrieving SSL certificates from the TM1 Admin Server and TM1 servers
+					  Configuring outgoing communications to the TM1 Admin Server
+			  Configuring the Cognos TM1 Operations Console
+			  Starting and logging into the Cognos  TM1 Operations Console
+	  Installing the Rich Tier
+		  Installing Cognos  TM1 Architect
+		  Installing Cognos  TM1 Performance Modeler
+			  Installing Cognos  TM1 Performance Modeler using the installation program
+			  Installing Cognos  TM1 Performance Modeler from the Cognos TM1 Applications portal
+			  Remotely installing Cognos  TM1 Performance Modeler on multiple computers
+			  Configuring logging for Cognos  TM1 Performance Modeler
+		  Installing Cognos  TM1 Perspectives
+		  Installing Cognos Insight
+			  Installing Cognos Insight using the installation program
+			  Installing Cognos Insight from the Cognos  TM1 Applications portal
+			  Remotely installing Cognos Insight on multiple computers
+			  Configuring Cognos  TM1 TurboIntegrator function security in Cognos Insight
+			  Configuring logging for Cognos Insight
+		  Installing Cognos TM1 APIs
+	  Installing Planning Analytics Workspace Local
+		  Planning Analytics Workspace Local architecture
+		  Prerequisites
+		  Free ports
+		  Install Planning Analytics Workspace Local on Windows Server 2016
+		  Install Planning Analytics Workspace Local on Red Hat Enterprise Linux 7
+		  Configuring Planning Analytics Workspace Local
+			  Configure parameters
+			  Connect to TM1 and authentication servers
+				  Configure TLS for Planning Analytics Workspace Local
+				  Configure TLS between Planning Analytics Workspace Local and other servers
+			  Check the status of the services
+			  View logs
+			  Shut down MongoDB cleanly on Windows Server 2016
+			  Run the Planning Analytics Workspace administration tool from the command line on Linux
+			  Access the Planning Analytics Workspace administration tool remotely on Windows Server
+			  Access the Planning Analytics Workspace administration tool remotely on Linux
+			  Back up or restore Planning Analytics Workspace Local
+			  Upgrade Planning Analytics Workspace Local
+			  Uninstall Planning Analytics Workspace Local
+	  Planning Analytics Workspace Distributed
+		  Install on Docker Swarm
+			  Docker Swarm architecture
+				  Docker Swarm benefits
+				  Swarm configuration
+				  Services
+				  Networks
+				  Databases
+				  Docker Registry
+				  Typical Planning Analytics Workspace Distributed deployment
+				  Monitoring Planning Analytics Workspace Distributed
+			  Create the Docker Swarm
+				  Check Swarm prerequisites
+				  Verify free ports for Swarm
+				  Initialize the Swarm
+				  Add managers to the Swarm
+				  Label Swarm nodes
+				  Lock the Swarm
+			  Install Planning Analytics Workspace Distributed
+				  Unzip the Planning Analytics Workspace Distributed archive
+				  Configure a private registry
+				  Start Planning Analytics Workspace Distributed
+				  Contents of the Planning Analytics Workspace Distributed installation
+			  Enable TLS for Planning Analytics Workspace Distributed
+				  Use your own certificate
+				  Configure TLS
+			  Migrate to Planning Analytics Workspace Distributed
+			  Back up and restore Planning Analytics Workspace Distributed
+				  Back up
+				  Restore
+			  Remove Planning Analytics Workspace Distributed
+			  Upgrade Planning Analytics Workspace Distributed
+		  Install on OpenShift
+			  Install OpenShift prerequisites
+			  Extract the Planning Analytics Workspace Distributed archive
+			  Configure basic OpenShift settings
+				  Configure the OpenShift project
+				  Configure deployment of images
+				  Configure an ingress controller
+				  Configure storage
+					  Configure local storage
+					  Configure shared storage
+					  Configure dedicated storage
+					  Set the desired storage class
+					  Storage providers and init container execution
+					  Set OpenShift resource limits
+			  Deferred deployment
+			  Configure Red Hat OpenShift deployment
+			  Start Planning Analytics Workspace Distributed
+			  Reinstall or uninstall Planning Analytics Workspace Distributed
+			  Configure advanced OpenShift settings
+				  Node configuration
+					  Configure the persistent volume locations on the storage nodes
+					  Configure the NFS persistent volume locations
+					  Configure a different storage type
+					  Configure Red Hat OpenShift security 
+				  Configure the primary node and worker nodes
+				  More basic configuration settings
+				  Advanced image deployment settings
+				  Advanced helm configuration settings
+				  Advanced ingress controller configuration settings
+				  Advanced storage service configuration settings
+	  Installing and configuring Planning Analytics for Microsoft Excel
+		  What's new?
+		  Installation overview
+		  Prerequisites for installing Planning Analytics for Microsoft Excel
+			  Find the version information for IBM Planning Analytics for Microsoft Excel
+			  Install Microsoft .NET Framework
+			  Primary interop assemblies (PIAs) for Microsoft Excel
+				  Modify the Microsoft Office setup to install primary interop assemblies for Excel
+				  Install PIAs for Microsoft Excel
+			  Uninstall previous versions of IBM Cognos Analysis for Microsoft Excel
+			  Connect to IBM Planning Analytics Workspace
+			  Install TM1 Server
+			  Set up connections for TM1 REST APIs
+			  Configure your antivirus software
+			  Ensure that you are using IBMid
+			  Use Cognos security
+		  Installation tasks
+			  Installing IBM Planning Analytics for Microsoft Excel
+			  Test IBM Planning Analytics for Microsoft Excel
+			  Uninstall IBM Planning Analytics for Microsoft Excel
+			  Register the IBM  Cognos Office Reporting TM1 Addin using a script
+				  Register the IBM  Cognos Office Reporting TM1 Addin using a registry command
+				  Register the IBM  Cognos Office Reporting TM1 Addin using the Register Cognos XLL.vbs script
+			  Configure IBM Planning Analytics for Microsoft Excel for use with high DPI displays
+		  Configure Planning Analytics for Microsoft Excel single sign-on
+		  Troubleshoot
+		IBM Planning Analytics TM1 Web installation
+		  Installing TM1 Web
+			  Install and configure TM1 Web on Microsoft  Windows
+				  Configure and run unattended TM1 Web installations on Windows
+			  Install and configure TM1 Web on Linux
+				  Configure and run unattended TM1 Web installations on Linux
+			  Configuring SSL for Planning Analytics TM1 Web/Spreadsheet Services
+			  Configure SSL for new deployments of Planning Analytics  TM1 Web/Spreadsheet Services
+			  Configure SSL for Planning Analytics TM1 Web/Spreadsheet Services with an existing keystore
+			  Relocating custom SSL files
+			  Upgrade IBM Planning Analytics TM1 Web  
+				  Configure TM1 Application Web to connect to TM1 Web on Windows
+				  Configure TM1 Application Web to connect to TM1 Web on Linux
+		  Modifying TM1 Web configuration parameters
+			  TM1 Web configuration parameters
+			  Editing the TM1 Web configuration file
+			  Configuring the TM1 Web login page using AdminHostName and TM1ServerName parameters
+			  Configuring a custom homepage for TM1 Web
+				  Configuring different homepages for individual users
+				  Configuring a global homepage for all users
+					  Using the HomePageObject parameter
+					  Setting a global TM1 Web homepage to a Cube View
+					  Setting a global TM1 Web homepage to a websheet
+						  Opening a websheet that references an Excel file outside of TM1
+						  Opening a websheet object that was uploaded to the TM1 server
+					  Setting a global TM1 Web homepage to a URL
+			  Configuring TM1 Web startup and appearance settings
+				  NavTreeHidden parameter
+				  NavTreeCollapsedOnStart parameter
+				  HideTabBar parameter
+				  HideWebsheetToolBar parameter
+				  HideCubeviewerToolBar parameter
+				  Displaying or hiding the Views node in the navigation pane
+				  TM1DatabaseLabel parameter
+			  Changing the Cube Viewer page size
+			  Setting the maximum number of sheets to export from a websheet
+			  Wrapping string values in cube views
+			  Setting the TM1 Web session timeout
+		  Configuring web browsers for Cognos TM1 Web
+			  Configuring web browser language for TM1 Web
+			  Displaying and entering numbers in Cognos TM1 Web based on Regional Settings
+			  Configuring Internet Explorer for Cognos  TM1 Web
+				  Running Cognos  TM1 Web on a WAN Server and exporting Excel and PDF files
+				  Adding Cognos  TM1 Web as a trusted site in Internet Explorer
+	  Integrating Planning Analytics Local with IBM Cognos software
+		  TM1 as a datasource with Cognos Analytics
+		  Import Cognos Analytics data into Planning Analytics Local with the TM1 Package Connector
+			  TM1 Package Connector requirements
+			  Installing the TM1 Package Connector
+			  Configuring the TM1 Package Connector
+				  Setting the environment variable
+				  Setting the TM1 server configuration parameter (optional)
+				  TM1 Package Connector on the client computer
+			  Running the TM1 Package Connector
+			  Installing the TM1 Package Connector on UNIX  
+		  Planning Analytics and Cognos Analytics security
+		  Integrate SAP BW with Planning Analytics
+		  Cognos  TM1 Applications integration with Cognos Analytics and the Cognos Connection portal
+	  Planning Analytics Local security
+		  Authentication security 
+			  Standard Cognos  TM1 authentication
+				  Security considerations when using Cognos  TM1 Applications
+			  Integrated login
+				  Integrated login prerequisites
+				  Configure integrated login for the IBM  TM1 Server
+				  Configure integrated login for TM1 Web
+				  Enable web browsers for integrated login
+				  Configure Cognos  TM1 Architect to use integrated login
+				  Configure Cognos  TM1 Perspectives to use integrated login
+				  Configure access rights for Cognos  TM1 users
+			  LDAP Authentication
+				  LDAP Authentication overview
+				  Validating users with an LDAP server
+				  LDAP authentication parameters
+				  Configuring LDAP validation
+				  Troubleshooting LDAP authentication
+			  Cognos security
+				  Overview to Cognos security 
+				  Verifying the configuration of IIS for Cognos Analytics 11.0 
+				  Configuring the TM1 Server to use Cognos security
+				  Managing TM1 users, groups, and objects when using Cognos security
+					  Defining a Cognos user to function as a Cognos  TM1 administrator
+					  Importing Cognos groups into Cognos  TM1
+					  Creating TM1 users when using Cognos security
+					  Administering Cognos  TM1 object security when using Cognos authentication security
+				  Configuring Cognos  TM1 clients to use Cognos security
+				  Configuring Cognos  TM1 Web to use Cognos security
+				  Configuring Cognos  TM1 Operations Console to use Cognos security
+				  Using Cognos  TM1 Applications with Cognos security
+					  Configuring Cognos  TM1 Applications to use Cognos Analytics Security
+					  Configuring session timeout values for Cognos  TM1 Applications and Cognos Analytics Security
+				  Administrator considerations when using Cognos authentication
+				  User considerations when using Cognos authentication
+					  Authentication behavior
+					  Private Cognos Security sessions
+					  Establishing a replication with Cognos security
+			  ETLDAP utility
+				  Modifying LDAP attributes
+				  Running ETLDAP
+				  Configuring the LDAP login parameters
+				  Building an LDAP query
+				  Connecting to the IBM  TM1 Server
+				  Mapping LDAP attributes to Cognos  TM1 fields
+				  Specifying the ETLDAP export options
+				  Exporting LDAP information to Cognos  TM1
+				  Running ETLDAP in Update mode to add new LDAP users
+		  Data transmission security 
+			  Overview
+			  Default configuration
+			  Configure the Data Tier to use custom TLS
+				  Configure the TM1 Server to use custom TLS
+				  Configure the Cognos  TM1 Admin Server to use custom TLS
+				  Configure the TM1 Server and a Cognos Analytics dispatcher with SSL enabled
+				  Edit parameters in the tm1s.cfg file to use independent certificates
+			  Configure the Web Tier to use custom TLS
+				  Use the default configuration
+				  Use IBM Key Management to configure custom certificates
+				  Use ThirdPartyCertificateTool to create custom certificates
+				  Edit parameters in Cognos Configuration to use independent certificates
+			  Configure the Rich Tier to use TLS
+				  Configure Cognos  TM1 Architect or Perspectives to use custom certificates
+				  Configure Cognos TM1 Performance Modeler to use custom certificates
+				  Configure Cognos Insight to use custom certificates
+				  Configure the TM1 C API to use custom certificates
+				  Configure the Cognos  TM1  Java API to use TLS
+				  Configure the Cognos  TM1 ETLDAP Utility to use TLS
+			  ThirdPartyCertificateTool command-line reference
+		  TM1 Server data encryption
+			  Run the TM1Crypt utility
+	  Configuring and maintaining Planning Analytics Local
+		  Setting up unattended installations and configurations
+			  Set up an unattended installation for IBM  Cognos components
+			  Set up unattended installations for IBM Planning Analytics for Microsoft Excel
+				  Set up the installation using a file generated from the Installation wizard
+				  Set up the installation using the response.ats file
+			  Set up an unattended configuration for IBM  Cognos components
+			  Set up an unattended uninstallation for IBM  Cognos components
+		  Maintaining your IBM Planning Analytics Local installation
+			  Backing up data and configuration files for IBM Planning Analytics Local
+			  Modifying Cognos  TM1 installed components
+			  Uninstalling IBM Planning Analytics
+			  Restoring data and configuration files in IBM Planning Analytics version 2.0.0
+			  Restoring application and configuration files in Cognos  TM1 Applications
+			  Importing an application definition in Cognos  TM1 Applications
+		  The tm1s.cfg configuration file
+			  Location of the tm1s.cfg file
+			  Sample tm1s.cfg file
+			  Sample cogstartup.xml file
+			  Parameters in the tm1s.cfg file
+				  AdminHost
+				  AllowReadOnlyChoreReschedule
+				  AllowSeparateNandCRules
+				  AllRuleCalcStargateOptimization
+				  ApplyMaximumViewSizeToEntireTransaction
+				  AuditLogMaxFileSize
+				  AuditLogMaxQueryMemory 
+				  AuditLogOn
+				  AuditLogUpdateInterval
+				  AutomaticallyAddCubeDependencies
+				  CacheFriendlyMalloc
+				  CalculationThresholdForStorage 
+				  CAMPortalVariableFile
+				  CAMUseSSL
+				  CheckFeedersMaximumCells 
+				  ClientCAMURI
+				  ClientExportSSLSvrCert
+				  ClientExportSSLSvrKeyID
+				  ClientMessagePortNumber
+				  ClientPingCAMPassport
+				  ClientPropertiesSyncInterval
+				  ClientVersionMaximum
+				  ClientVersionMinimum
+				  ClientVersionPrecision
+				  CognosMDX.AggregateByAncestorRef
+				  CognosMDX.CellCacheEnable
+				  CognosMDX.PrefilterWithPXJ
+				  CognosMDX.SimpleCellsUseOPTSDK
+				  CognosMDX.UseProviderCrossJoinThreshold
+				  CognosTM1InterfacePath
+				  CreateNewCAMClients
+				  DataBaseDirectory
+				  DefaultMeasuresDimension 
+				  DisableMemoryCache
+				  DisableSandboxing
+				  Display_Info_DBType_R8
+				  DownTime
+				  EnableNewHierarchyCreation
+				  EnableSandboxDimension
+				  EnableTIDebugging
+				  EventLogging
+				  EventScanFrequency
+				  EventThreshold.PooledMemoryInMB
+				  EventThreshold.ThreadBlockingNumber
+				  EventThreshold.ThreadRunningTime
+				  EventThreshold.ThreadWaitingTime
+				  ExcelWebPublishEnabled
+				  FileRetry.Count
+				  FileRetry.Delay
+				  FileRetry.FileSpec
+				  FIPSOperationMode
+				  ForceReevaluationOfFeedersForFedCellsOnDataChange
+				  HTTPPortNumber
+				  HTTPSessionTimeoutMinutes
+				  IdleConnectionTimeOutSeconds
+				  IndexStoreDirectory
+				  IntegratedSecurityMode
+				  IPAddressV4
+				  IPAddressV6
+				  IPVersion
+				  JavaClassPath
+				  JavaJVMArgs
+				  JavaJVMPath
+				  keyfile
+				  keylabel
+				  keystashfile
+				  Language
+				  LDAPHost
+				  LDAPPasswordFile
+				  LDAPPasswordKeyFile
+				  LDAPPort
+				  LDAPSearchBase
+				  LDAPSearchField
+				  LDAPSkipSSLCertVerification
+				  LDAPSkipSSLCRLVerification
+				  LDAPUseServerAccount
+				  LDAPVerifyCertServerName
+				  LDAPVerifyServerSSLCert
+				  LDAPWellKnownUserName
+				  LoadPrivateSubsetsOnStartup
+				  LoadPublicViewsAndSubsetsAtStartup
+				  LockPagesInMemory
+				  LoggingDirectory
+				  LogReleaseLineCount
+				  MagnitudeDifferenceToBeZero
+				  MaskUserNameInServerTools
+				  MaximumCubeLoadThreads
+				  MaximumLoginAttempts 
+				  MaximumMemoryForSubsetUndo 
+				  MaximumSynchAttempts
+				  MaximumTILockObjects
+				  MaximumUserSandboxSize
+				  MaximumViewSize 
+				  MDXSelectCalculatedMemberInputs
+				  MemoryCache.LockFree
+				  MessageCompression
+				  MTCubeLoad
+				  MTCubeLoad.MinFileSize
+				  MTCubeLoad.UseBookmarkFiles
+				  MTCubeLoad.Weight
+				  MTFeeders
+				  MTFeeders.AtStartup
+				  MTFeeders.AtomicWeight
+				  MTQ
+				  MTQ.OperationProgressCheckSkipLoopSize
+				  MTQ.SingleCellConsolidation
+				  MTQQuery
+				  NetRecvBlockingWaitLimitSeconds
+				  NetRecvMaxClientIOWaitWithinAPIsSeconds
+				  NIST_SP800_131A_MODE
+				  ODBCLibraryPath
+				  ODBCTimeoutInSeconds
+				  OptimizeClient
+				  OracleErrorForceRowStatus
+				  PasswordMinimumLength 
+				  PasswordSource
+				  PerfMonIsActive
+				  PerformanceMonitorOn
+				  PersistentFeeders
+				  PortNumber
+				  PreallocatedMemory.BeforeLoad
+				  PreallocatedMemory.Size
+				  PreallocatedMemory.ThreadNumber
+				  PrivilegeGenerationOptimization
+				  ProgressMessage
+				  ProportionSpreadToZeroCells
+				  PullInvalidationSubsets
+				  RawStoreDirectory
+				  ReceiveProgressResponseTimeoutSecs
+				  ReduceCubeLockingOnDimensionUpdate
+				  RulesOverwriteCellsOnLoad
+				  RunningInBackground
+				  SaveFeedersOnRuleAttach
+				  SaveTime
+				  SecurityPackageName
+				  ServerCAMURI
+				  ServerCAMURIRetryAttempts
+				  ServerLogging
+				  ServerName
+				  ServicePrincipalName
+				  SkipLoadingAliases
+				  SpreadErrorInTIDiscardsAllChanges
+				  SpreadingPrecision 
+				  SQLRowsetSize 
+				  SSLCertAuthority
+				  SSLCertificate
+				  SSLCertificateID
+				  StartupChores
+				  SubsetElementBreatherCount 
+				  SupportPreTLSv12Clients
+				  SvrSSLExportKeyID
+				  SyncUnitSize
+				  TM1ConnectorforSAP
+				  tlsCipherList
+				  TopLogging
+				  TopScanFrequency
+				  TopScanMode.Sandboxes
+				  TopScanMode.SandboxQueueMetrics
+				  TopScanMode.Threads
+				  UnicodeUpperLowerCase
+				  UseExcelSerialDate
+				  UseLocalCopiesforPublicDynamicSubsets
+				  UseNewConnectorforSAP
+				  UserDefinedCalculations 
+				  UseSQLFetch UseSQLFetchScroll UseSQLExtendedFetch
+				  UseSSL
+				  UseStargateForRules
+				  VersionedListControlDimensions
+				  ViewConsolidationOptimization
+				  ViewConsolidationOptimizationMethod
+				  ZeroWeightOptimization
+		  The Tm1p.ini client configuration file
+			  Location of the Tm1p.ini File
+			  Parameters in the Tm1p.ini file
+				  AdminHost
+				  AdminSvrSSLCertAuthority
+				  AdminSvrSSLCertID
+				  AdminSvrSSLCertRevList
+				  AdminSvrSSLExportKeyID
+				  AdvancedRulesEditor
+				  AllowImportCamClients
+				  BrowseDisplayReadsRightToLeft
+				  ClassicSliceMode
+				  CognosGatewayURI
+				  ConnectLocalAtStartup
+				  DataBaseDirectory
+				  DimensionDownloadMaxSize
+				  DisableAdminHostEntry
+				  DisableWritebackOnDisconnect
+				  DisableWritebackOnTM1Formulas
+				  DisplayApplications
+				  DisplayChores
+				  DisplayControlCubes
+				  DisplayCubes
+				  DisplayDimensions
+				  DisplayExplorerPropertiesWindow
+				  DisplayProcesses
+				  DisplayReplications
+				  ExpandRowHeaderWidth
+				  ExportAdminSvrSSLCert
+				  InSpreadsheetBrowser
+				  IntegratedLogin
+				  Language
+				  LocalServerNetworkProtocol
+				  MainWindowLayoutInfo
+				  PreviousAdminHosts
+				  PreviousDataDirectories
+				  SecurityAssignmentWindowLayoutInfo
+				  SentMsgsToServerCountWarning
+				  ShowAdminHostChangeWarning
+				  ShowAliasAttributeWarning
+				  ShowChoresSchedulingWarning
+				  ShowCubeReplicationWarning
+				  ShowDimDeleteElementWarning
+				  ShowDimensionAccessWarning
+				  ShowDynamicSubsetWarning
+				  ShowPickOperationWarning
+				  ShowProcessUNASCIIWarning
+				  ShowProcessUNODBCWarning
+				  SliceNewWorkbook
+				  SubsetWindowLayoutInfo
+				  TM1RebuildDefault
+	  Troubleshooting Planning Analytics Local
+		  What if my TM1 Application Server deployment fails with a Java heap space error?
+		  What if I use Microsoft Excel 2007 or earlier .xls worksheets?
+		  How do I save security rights when importing or restoring a Cognos  TM1 10.2.x application?
+		  How do I configure client computers to export TM1 data in PDF format?
+		  What timeout settings can I set?
+		  How do I fix my Planning Analytics Workspace Local installation?
+			  Why can't I open Planning Analytics Workspace in a browser?
+			  Why doesn't the Planning Analytics Workspace administration tool start?
+			  How do I handle errors when I run the start script?
+			  How do I handle errors with the Host Network Service (HNS)?
+			  Why can't I access Planning Analytics Workspace on Windows Server 2016?
+			  What do I do if Docker for Planning Analytics Workspace hangs?
+			  How do I resolve Planning Analytics Workspace connection issues on Windows Server 2016?
+			  How do I change default port numbers for Planning Analytics Workspace on Windows Server 2016?
+			  How do I change the IP configuration of Planning Analytics Workspace Local?
+		  What are some common errors when installing Planning Analytics for Microsoft Excel?
+			  Configuration Issues
+				  Convert to Formulas does not show value
+				  Update server and package designations to make a server available
+				  The Cognos Office interface fails to initialize in Microsoft Office 
+					Cognos for Microsoft Office Fails to Initialize
+					Microsoft Office does not open a Microsoft Office document published from Cognos Office
+					  Re-register file types with a Microsoft Office program
+				  Unable to Open Published Microsoft Office Documents from Cognos Connection
+					  Confirm opening of documents
+					  Reset internet security options
+				  .NET Messages are not in the installed .NET Framework language
+				  Workbook closes unexpectedly
+				  Reports unavailable in Cognos Connection jobs after using Save As command in Cognos Report Studio
+				  The content of the Custom Report shows #NAME?
+			  Processing issues
+				  Improve performance for TM1 data
+				  DPR-ERR-2079 Firewall Security Rejection
+				  Item cannot be expanded
+				  Results have exceeded the Excel row or column limit
+						Error refreshing exploration saved in earlier version of Microsoft Excel
+						Microsoft Excel limits
+					Security Issues
+						  Cognos Office Unable to Create Trust Relationship
+						Unable to View Reports After Clicking View Report
+					  Cognos Office Numbered Error Messages
+						COI-ERR-2002 Block type is not valid
+						COI-ERR-2003 Unexpected type: stacked block  
+						COI-ERR-2005 This version of Microsoft Office is not supported
+						COI-ERR-2006 This Microsoft Office product is not supported
+						COI-ERR-2008 Unable to Retrieve from Resources. Tried '{0}'
+						COI-ERR-2009 Unable to Perform This Operation Because Microsoft Excel is in Edit Mode
+						COI-ERR-2010 The name {0} is not valid. A name must not contain both a quote (") character and an apostrophe (') character
+						COI-ERR-2011 The server did not return the expected response. Check that the gateway is valid.
+						COI-ERR-2013 Unable to load metadata
+						COI-ERR-2015 There was a problem parsing the MIME encoded server response. Tried to find the boundary [{0}] but found the boundary [{1}] instead
+						COI-ERR-2016 Worksheet protected, IBM  Cognos styles cannot be populated
+						COI-ERR-2019 Connection failed
+						COI-ERR-2305 Unable to perform this operation because Microsoft Excel is in edit mode
+						COI-ERR-2307 Login failed
+					  IBM Planning Analytics for Microsoft Excel numbered error messages
+						COR-ERR-2004 Axis specification is not valid
+						COR-ERR-2007 Error retrieving from resources. Tried '{0}'
+						COR-ERR-2009 Name formula is not valid
+						COR-ERR-2010 Formula is not valid
+						COR-ERR-2011 Invalid range: Please enter a valid range for crosstab or list
+						COR-ERR-2013 Exploration cannot be converted to formula based because at least one context item contains a selection
+						COR-ERR-2014 Due to Excel worksheet limitations the results may be truncated
+						COR-ERR-2015 The current exploration cannot be rendered at this location on the worksheet
+				  Notices
+
+
+</pre>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+

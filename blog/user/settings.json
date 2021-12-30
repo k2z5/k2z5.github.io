@@ -1,0 +1,29 @@
+{
+    "db": {
+        "server": "localhost",
+        "user_name": "smz11_blog",
+        "passw": "gp68Y4e7paNl1nTUaW2IlqekOKmHd2p3jjc3cplV",
+        "name": "smz11_blog"
+    },
+    "timezone": {
+        "offset": 10800,
+        "is_dst": false
+    },
+    "template": "plain",
+    "language": "ru",
+    "appearance": {
+        "notes_per_page": 10
+    },
+    "comments": {
+        "default_on": false
+    },
+    "site_title": "Идеи и их воплощение",
+    "description": "Зарождения идеи, превращение ее в цель и реализация.",
+    "author": "",
+    "user": {
+        "email": "smz@mail.ru"
+    },
+    "notifications": {
+        "new_comments": true
+    }
+}
