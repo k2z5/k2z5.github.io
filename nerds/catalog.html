@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>NERDS Web design studio</title>
+  </head>
+<body>
+  <header class="main-header catalog-header">
+    <div class="menu container clearfix">
+      <nav class="main-navigation">
+        <a class="header-logo" href="index.html"></a>
+        <ul class="main-menu clearfix">
+          <li>
+            <a href="index.html#studio">Студия</a>
+          </li>
+          <li>
+            <a href="index.html#clients">Клиенты</a>
+          </li>
+          <li class="active">
+            <a href="catalog.html">Магазин</a>
+          </li>
+          <li>
+            <a href="#feedback">Контакты</a>
+          </li>
+          <li class="cart">
+            <a href="cart.html">Корзина</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <h1>Магазин готовых шаблонов</h1>
+  </header>
+  <main class="wrapper clearfix">
+    <section class="filter">
+      <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+        <h4>Стоимость</h4>
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar"></div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+        </div>
+        <div class="price-controls clearfix">
+          <label class="min-price">от <input type="text" name="min-price" placeholder="0"></label>
+          <label class="max-price">до <input type="text" name="max-price" placeholder="15 000"></label>
+        </div>
+        <h4>Сетка</h4>
+        <input type="radio" id="bt-1" name="grid" value="yes" checked>
+        <input type="radio" id="bt-2" name="grid" value="no">
+        <input type="radio" id="bt-3" name="grid" value="no" disabled>
+        <div class="radio-buttons">
+          <label for="bt-1">Адаптивная</label>
+          <label for="bt-2">Фиксированная</label>
+          <label for="bt-3">Резиновая</label>
+        </div>
+        <h4>Особенности</h4>
+        <input type="checkbox" id="feature-1" name="slider" checked>
+        <input type="checkbox" id="feature-2" name="advantages">
+        <input type="checkbox" id="feature-3" name="news" disabled>
+        <input type="checkbox" id="feature-4" name="gallery" disabled>
+        <input type="checkbox" id="feature-5" name="cart" disabled>
+        <div class="checkboxes">
+          <label for="feature-1">Слайдер</label>
+          <label for="feature-2">Блок преимуществ</label>
+          <label for="feature-3">Новости</label>
+          <label for="feature-4">Галерея</label>
+          <label for="feature-5">Корзина</label>
+        </div>
+        <button class="nerds-btn filter-btn" type="submit">Показать</button>
+      </form>   
+    </section>
+    
+    <section class="items-catalog clearfix">
+      <div class="sorting">
+        <div class="sorting-caption">Сортировать:</div>
+        <a>По цене</a>
+        <a href="#">По типу</a>
+        <a href="#">По названию</a>
+        <div class="triangle-down "></div>
+        <div class="triangle-up active"></div>
+      </div>
+      <div class="item">
+        <img src="img/img-sedona.jpg" width="360" height="576" title="Sedona" class="/img" alt="/img-sedona">
+        <div class="item-action">
+          <h3>Sedona</h3>
+          <p>Информационный сайт<br>для туристов</p>
+          <button type="button" class="nerds-btn item-btn">9 900 РУБ.</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/img-pink.jpg" width="360" height="576" title="Pink App" class="/img" alt="/img-pink">
+        <div class="item-action">
+          <h3>Pink App</h3>
+          <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
+          <button type="button" class="nerds-btn item-btn">9 900 РУБ.</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/img-barbershop.jpg" width="360" height="576" title="Barbershop" class="/img" alt="/img-barbershop">
+        <div class="item-action">
+          <h3>Barbershop</h3>
+          <p>Сайт салоны красоты.<br>Для мужчин, да.</p>
+          <button type="button" class="nerds-btn item-btn">9 900 РУБ.</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/img-mishka.jpg" width="360" height="576" title="MISHKA" class="/img" alt="/img-mishka">
+        <div class="item-action">
+          <h3>MISHKA</h3>
+          <p>Интернет-магазин<br>вязаных игрушек</p>
+          <button type="button" class="nerds-btn item-btn">9 900 РУБ.</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/img-aplus.jpg" width="360" height="576" title="A Plus" class="/img" alt="/img-aplus">
+        <div class="item-action">
+          <h3>A Plus</h3>
+          <p>Лендинг курсов повышения<br>квалификации</p>
+          <button type="button" class="nerds-btn item-btn">9 900 РУБ.</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/img-kvast.jpg" width="360" height="576" title="КВАСТ" class="/img" alt="/img-kvast">
+        <div class="item-action">
+          <h3>КВАСТ</h3>
+          <p>Промо-сайт производителя<br>крафтового кваса</p>
+          <button type="button" class="nerds-btn item-btn">9 900 РУБ.</button>
+        </div>
+      </div>
+      
+       <div class="pagination">
+        <a class="active-btn">1</a>
+        <a href="#2" class="nerds-btn catalog-btn">2</a>
+        <a href="#3" class="nerds-btn catalog-btn">3</a>
+        <a href="#next" class="nerds-btn catalog-btn next-btn">Следующая</a>
+      </div>
+
+    </section>
+
+  </main>  
+  
+   <section class="map" id="feedback">
+    <div class="container">
+     <div class="address">
+      <h4>NЁRDS DESIGN STUDIO</h4>
+      <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+      <p class="tel">тел. +7 (812) 275-75-75</p>
+      <a href="feedback.html" class="nerds-btn map-btn">Напишите нам</a>
+      <a href="#" class="map-marker"></a>
+     </div>
+    </div>
+  </section>
+ 
+  <footer class="main-footer container clearfix">
+    <section class="social">
+      <h3 class="visually-hidden">Присоединяйтесь к нам в соцсетях:</h3>
+      <ul>
+        <li class="nerds-btn btn-footer vk">
+          <a href="#">Вконтакте</a>
+        </li>
+        <li class="nerds-btn btn-footer f">
+          <a href="#">Фейсбук</a>
+        </li>
+        <li class="nerds-btn btn-footer i">
+          <a href="#">Инстаграм</a>
+        </li>
+      </ul>
+      </section>
+      <section class="action">
+        <h2>Давайте дружить, это выгодно!</h2>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+  </footer>
+   <section class="feedback">
+    <h2>Напишите нам</h2>
+    <form action="https://echo.htmlacademy.ru"  method="post" name="feedback">
+    <div class="form-columns clearfix">  
+       <label for="name">Ваше имя:<br>
+        <input type="text" placeholder="Представьтесь, пожалуйста" id="name" name="name">
+      </label>
+      <label for="email">Ваш email:<br>
+        <input type="email" placeholder="Для отправки ответа" id="email" name="email">
+      </label>
+    </div>  
+    <label for="letter" class="txt">Текст письма:<br><textarea rows="4" name="text" placeholder="В свободной форме" id="letter"></textarea></label>
+    <input type="submit" class="nerds-btn form-btn">
+    <div class="close"></div>
+    </form>
+  </section>
+  <section class="map-modal-js">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043705196!2d30.320889251334346!3d59.9387941817873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1513838051578" width="900" height="530" style="border:0" allowfullscreen></iframe>
+    <div class="close"></div>
+  </section>
+
+  <script src="js/script.min.js"></script>
+</body>
+</html>
