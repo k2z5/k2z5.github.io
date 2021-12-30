@@ -1,0 +1,5 @@
+[25-Dec-2017 14:46:23 Europe/Moscow] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 6813300 bytes) in /home/smz11/domains/gremlin.cf/public_html/textolite/textolite.php on line 1
+[25-Dec-2017 14:47:19 Europe/Moscow] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 6906555 bytes) in /home/smz11/domains/gremlin.cf/public_html/textolite/textolite.php on line 1
+[25-Dec-2017 15:16:49 Europe/Moscow] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 6847059 bytes) in /home/smz11/domains/gremlin.cf/public_html/textolite/textolite.php on line 1
+[27-Dec-2017 22:33:40 Europe/Moscow] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 6466512 bytes) in /home/smz11/domains/gremlin.cf/public_html/textolite/textolite.php on line 1
+[27-Dec-2017 22:33:56 Europe/Moscow] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 6300075 bytes) in /home/smz11/domains/gremlin.cf/public_html/textolite/textolite.php on line 1

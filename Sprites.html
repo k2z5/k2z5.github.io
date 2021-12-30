@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Спрайты</title>
+  <style>
+    body {
+      padding: 20px;
+      font-family: "Tahoma", sans-serif;
+    }
+
+    .btn {
+      display: block;
+      width: 160px;
+      margin: 20px auto;
+      padding: 12px;
+      color: white;
+      background: #34495e;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn-add {
+      background: #27ae60;
+    }
+
+    .btn-remove {
+      background: #c0392b;
+    }
+
+    .icon {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin: 0 5px;
+      vertical-align: bottom;
+      background: url("Bootstrap-sprites.png") no-repeat;
+      box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+    }
+
+    .icon-add {
+      background-position: -407px -96px
+    }
+
+    .icon-edit {
+      background-position: -96px -72px
+    }
+
+    .icon-remove {
+      background-position: -456px -0px
+    }
+
+    .full-sprite {
+      height: 200px;
+      margin: 50px auto;
+      background: #34495e url("Bootstrap-sprites.png") no-repeat 50% 50%;
+      border-radius: 5px;
+    }
+
+    .block {
+      width: 96px;
+      height: 96px;
+      margin: 0 auto;
+      line-height: 96px;
+      text-align: center;
+      background-color: lightgrey;
+
+  </style>
+</head>
+
+<body>
+  <span class="btn btn-add">
+            <span class="icon icon-add"></span> Добавить
+  </span>
+  <span class="btn btn-edit">
+            <span class="icon icon-edit"></span> Редактировать
+  </span>
+  <span class="btn btn-remove">
+            <span class="icon icon-remove"></span> Удалить
+  </span>
+  <!-- Картинка спрайта на тёмном фоне -->
+  <div class="full-sprite"></div>
+  <h2>Как отцентровать элемент div? Задать ему margin: 0 auto;</h2>
+  <div class="block">Блок 1</div>
+
+</body>
+
+</html>

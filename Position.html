@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Позиционирование. Position:static, position:relative, position:absolute и position:fixed;</title>
+<style>
+.outline {
+    margin: 5px;
+    padding: 5px;
+    background: rgba(0,0,0,0.1);
+    border: 1px dotted #666666;
+}
+
+.column {
+    display: inline-block;
+}
+.block-1 {
+    min-height: 100px;
+    padding: 10px;
+    background: #3a78a1;
+}
+
+.block-2 {
+    min-height: 100px;
+    padding: 10px;
+    background: #27ae60;
+}
+
+.block-absolute {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    font-size: 12px;
+    font-family: "Courier New", monospace;
+    background: #e74c3c;
+    opacity: 0.8;
+}
+.block {
+    min-height: 200px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    background: #3a78a1;
+}
+
+.block-fixed {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    background: rgba(255, 0, 0, 0.5);
+}
+</style>
+</head>
+
+<body>
+	<h1>Position:static</h1>
+    <p>Поток документа</p>
+            <div class="outline">Блочные элементы — прямоугольники, которые располагаются слева направо и сверху вниз.</div>
+        <div class="outline">
+            <div class="outline">Можно вкладывать блоки друг в друга и выстраивать колонки.</div>
+            <div class="column outline">Колонка 1</div>
+            <div class="column outline">Колонка 2</div>
+            <div class="column outline">Колонка 3</div>
+        </div>
+        <div class="outline"><span class="outline">Строчные элементы и текст просто переносятся на</span> следующую строку, если не хватает места</div>
+
+    <h1>position:relative</h1>
+    <p>Значение relative обозначает «относительное позиционирование». Относительно спозиционированный элемент можно перемещать относительно его исходного положения. Относительно спозиционированный элемент остается в потоке документа, а при его перемещении наблюдаются интересные эффекты. Например, сдвиг для тени. </p>
+    <h1>и position:absolute</h1>
+    <p>position: absolute и свойство left.
+
+Свойства left, top, right и bottom по-разному работают для элементов с абсолютным и относительным позиционированием.
+
+Если для «относительных» элементов эти свойства задают смещение относительно исходной позиции, то для «абсолютных» элементов они задают расположение относительно некой системы координат, как для точки на графике.
+
+По умолчанию такой системой координат является окно браузера, а точки начала координат привязаны к его углам.
+</p>
+        <div class="block-1">
+            Блок 1
+            <div class="block-2">
+                Блок 2
+                <div class="block-absolute">
+                    position: absolute;<br>
+                    right: 10px;<br>
+                    top: 10px;
+                </div>
+            </div>
+        </div>
+<h1>position:fixed</h1>
+<p>Фиксированное позиционирование похоже на абсолютное, но есть и отличия:
+
+Фиксированный элемент тоже выпадает из потока.
+Фиксированный элемент привязывается к определенной точке в окне браузера и остается на ней всегда, даже при прокрутке страницы.
+Фиксированный элемент можно позиционировать с помощью свойств top, left, right, bottom, но точка отсчета всегда привязана к окну браузера.
+Можете представить себе фиксированный элемент, как стикер, который наклеен на монитор. Такие элементы часто применяют для создания навигационных панелей, привязанных к верхней или нижней части окна браузера.</p>
+        <div class="block">Блок 1</div>
+        <div class="block">Блок 2</div>
+        <div class="block">Блок 3</div>
+        <div class="block-fixed">Блок 4. Прокручивайте страницу и убедитесь, что блок не перемещается.</div>
+        <div class="block">Блок 5</div>
+
+</body>
+</html>

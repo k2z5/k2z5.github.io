@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>ОШИБКА 500!</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style>
+* { font-family: verdana; font-size: 10pt }
+b { font-weight: bold; }
+td { padding: 5;}
+.font{font-family:tahoma,sans-serif;font-size:175px}
+</style>
+</head>
+<body bgcolor=#ffffff link=#445588 alink=#445588 vlink=#445588 topmargin=0 leftmargin=0 marginwidth=0 marginheight=0>
+<center>
+<br><br><br><br>
+<table width="80%" style="border: 1px solid gray">
+<tr><td><center><b>ОШИБКА</b></center></td></tr>
+<tr><td>
+<table  align="center" width=50% height=100 bgcolor=#808080 border=0>
+<tr><td>
+<center><font class="font" color=#FFFFFF>500</font></center>
+</td></tr></table><BR>
+</td></tr>
+<tr><td><br><br>
+<I><b>В чем может быть проблема?</b></I><br>
+<br>1) Проверьте записи в файле <b>.htaccess</b> скорей всего в нем допущена синтаксическая ошибка.<br>
+<span style="font-size:10px">Проверьте чтобы не было лишних символов в начале файла ;
+<br>
+Проверьте чтобы не было допущено синтаксических ошибок в правилах mod_rewrite ;
+</span>
+<br><br>
+<br>2) Если ошибок в файле <b>.htaccess</b> нету. Скорей всего ваш скрипт долго выполняется, или возникли проблемы на сервере.<br>
+<span style="font-size:10px">Если ошибка появилась едино-разово, попробуйте через некоторое время обновить страницу ;
+<br>
+Если ошибка появляется постоянно при запуске скрипта, обратитесь в службу поддержки ;
+</span>
+<br><br>
+<br>
+3) Если ошибка не исчезнет, обратитесь в <a href="http://hostia.ru/contact_hosting.php">службу поддержки</a> хостинга.
+<br><br><br>
+</td></tr>
+<tr><td><center>Хостинг Сайтов <a href="http://hostia.ru/" target=_top>&laquo;ХостиЯ&raquo;</a> © 2007-2017 </center>
+</td></tr>
+</table>
+<br><br><br>
+</body>
+</html>

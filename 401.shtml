@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Ошибка 401 / Требуется Авторизация!</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style>
+* { font-family: verdana; font-size: 10pt }
+b { font-weight: bold; }
+td { padding: 5;}
+.font		{font-family:tahoma,sans-serif;font-size:175px}
+</style>
+</head>
+<body bgcolor=#ffffff link=#445588 alink=#445588 vlink=#445588 topmargin=0 leftmargin=0 marginwidth=0 marginheight=0>
+<center>
+<br><br><br><br>
+<table width="80%" style="border: 1px solid gray">
+<tr><td><center>Хостинг-провайдер <a href="http://hostia.ru">ХостиЯ</a></center></td></tr>
+<tr><td>
+<table  align="center" width=50% height=100 bgcolor=#808080 border=0>
+<tr><td>
+<center><font class="font" color=#FFFFFF>401</font></center>
+</td></tr></table><BR>
+</td></tr>
+<tr><td><center><b>Ошибка 401 / Требуется авторизация!</b><br><br>
+<br>
+Введенные данные не были приняты! Авторизация отклонена, доступ к данной странице сайта требует авторизации!
+</center><br><br><br><br><br><br>
+</td></tr>
+<tr><td><center>Хостинг Сайтов <a href="http://hostia.ru" target=_top>&laquo;ХостиЯ&raquo;</a> © 2007-2017 </center>
+</td></tr>
+</table>
+<br><br>
+</body>
+</html>

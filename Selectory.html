@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Продвинутые селекторы</title>
+  <style>
+    .error {
+      color: red;
+    }
+
+    .underline {
+      text-decoration: underline;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+
+    p {
+      margin: 16px 0 16px 0;
+      background-color: #dff0d8;
+      padding: 10px;
+    }
+
+    .p-first {
+      margin-left: 50px;
+    }
+
+    .p-second {
+      padding: 20px;
+    }
+
+    .p-third {
+      width: 50%;
+    }
+
+    .p-absolute {
+      padding: 20px;
+      background-color: rgba(0, 255, 0, 0.25);
+      position: absolute;
+      left: 100px;
+      bottom: 200px;
+    }
+
+    div {
+      margin-bottom: 15px;
+      padding: 10px 25px 10px 25px;
+      background-color: #dff0d8;
+    }
+
+    .left-column {
+      width: 50%;
+      min-height: 100px;
+      background-color: #fcf8e3;
+      float: left;
+    }
+
+    .right-column {
+      width: 25%;
+      min-height: 100px;
+      background-color: #d9edf7;
+      float: right;
+    }
+
+    .footer {
+      clear: both;
+    }
+
+    .alert {
+      padding: 10px;
+      border: 1px solid #d6e9c6;
+      background-color: #dff0d8;
+      color: #468847;
+      border-radius: 5px;
+    }
+
+    .green {
+      background-color: #dff0d8;
+    }
+
+    .blue {
+      background-color: #aaddff;
+    }
+
+    .nice-box {
+      border-radius: 5px;
+      box-shadow: 3px 3px 4px #cccccc;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Селекторы посложнее</h1>
+  <p>К более сложным селекторам можно отнести:</p>
+  <ul>
+    <li>селекторы по классам,</li>
+    <li>селекторы по псевдоклассам,</li>
+    <li class="error">селекторы по тегам,</li>
+    <li>селекторы по id.</li>
+  </ul>
+  <p class="error">Использовать селекторы по классам — это хорошо.</p><br>
+  <a href="https://htmlacademy.ru/courses/41/run/3">https://htmlacademy.ru/courses/41/run/3</a>
+  <br>
+  <h1>Оформление текста и CSS</h1>
+  <p>При оформлении текста с помощью CSS очень часто используется тег &lt;span&gt; с классами.</p>
+  <p>Например, можно выделять слова <span class="underline">подчёркиванием</span>, <span class="bold">жирностью</span> или <span class="italic">курсивом</span>.</p>
+  <p class="bold">Можно выделять не только отдельные слова, но и целые абзацы.</p>
+  <p class="italic underline">И даже комбинировать классы.</p>
+  <a href="https://htmlacademy.ru/courses/41/run/4">https://htmlacademy.ru/courses/41/run/4</a><br>
+  <h1>Блочные элементы и CSS</h1>
+
+  <p class="p-first">Размеры и отступы с помощью CSS можно задавать блочным элементам. Абзац, тег &lt;p&gt;, является одним из них.</p>
+
+  <p class="p-second">Блочным элементам можно задавать внутренние и внешние отступы.</p>
+
+  <p class="p-third">Также им можно задавать ширину и высоту.</p>
+  <a href="https://htmlacademy.ru/courses/41/run/5">https://htmlacademy.ru/courses/41/run/5</a><br>
+  <h1>Позиционирование элементов. Как выпасть из потока?</h1>
+
+  <p>Существует понятие «document flow» или «поток документа». Оно определяет то, как располагаются элементы на HTML-странице.</p>
+
+  <p class="p-absolute">Абсолютно позиционированные элементы исключаются из потока. 100 слева и 200 снизу.</p>
+
+  <p>Другие элементы как бы перестают их замечать и то место, где располагается абсолютно позиционированный элемент, считают пустым.</p>
+  <a href="https://htmlacademy.ru/courses/41/run/6">https://htmlacademy.ru/courses/41/run/6</a><br>
+  <h1>Создание сетки страницы</h1>
+  <div class="header">Логотип и меню</div>
+  <div class="left-column">Основное содержание страницы</div>
+  <div class="right-column">Боковая колонка</div>
+  <div class="footer">Подвал</div>
+  <br>
+  <div class="alert">
+    Используйте CSS для оформления элементов.
+  </div><br>
+  <a href="https://htmlacademy.ru/courses/41/run/8">https://htmlacademy.ru/courses/41/run/8</a>
+  <br>
+  <h1>Каскадность. Коктейль из классов</h1>
+
+  <p class="blue nice-box">Каскадность — это очень мощный механизм.</p>
+
+  <p class="green nice-box">Веб-разработчик, постигший тайны каскадности, достигает просветления в вёрстке и становится гуру.</p>
+
+  <p class="blue nice-box">Веб-разработчик, не стремящийся постигнуть каскадность, так и останется подмастерьем.</p>
+  <br>
+  <a href="https://htmlacademy.ru/courses/41/run/12">https://htmlacademy.ru/courses/41/run/12</a><br>
+  <br>
+  <p><a href="Blochnaya.html">Блочная верстка</a></p>
+  <a href="https://htmlacademy.ru/courses/41/run/15">https://htmlacademy.ru/courses/41/run/15</a>
+
+</body>
+
+</html>

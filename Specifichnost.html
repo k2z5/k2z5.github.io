@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Селекторы CSS. Специфичность</title>
+<style>
+	span {
+		background-color: #27ae60; /* Зеленый */
+	}
+	div {
+	}
+	
+	div span {
+		background-color: #2980b9; /* Синий */
+	}
+	
+	#floor .cat-in-box {
+		background-color: #34495e; /* Мокрый асфальт */
+	}
+	
+	.cat-in-box {
+		background-color: #8e44ad; /* Фиолетовый */
+	}
+	
+	#floor span {
+		background-color: #c0392b; /* Красный */
+	}
+	
+	div .cat-in-box {
+		background-color: #e67e22; /* Оранжевый */
+	}
+	
+</style>
+</head>
+
+    <body>
+		<h1>Специфичность</h1>
+    <div id="floor">
+            <span class="cat-in-box">Кексик</span>
+        </div><br>
+
+        <img src="img-2017-11-03-15-13-10.png" width="631" height="560" alt="Скриншот с формулами подсчета ранга специфичности, с академии"/>
+	<p>Ссылка: <a href="https://htmlacademy.ru/courses/66/run/15">https://htmlacademy.ru/courses/66/run/15</a></p>
+    </body>
+</html>

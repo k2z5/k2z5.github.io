@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Инструментарий. CSS. Псевдоклассы</title>
+<style>
+	li {
+		background-color:white;
+	}
+	
+	li:last-child {
+		background-color:yellow;
+	}
+	li:first-child {
+		background-color:red;
+	}
+    li:nth-child(3) {
+    	background-color:red;
+	}
+	table {
+		background: rgba(255, 255, 255, 0.95);
+	}
+	
+	tr:hover {
+		background-color: #fcf8e3;
+	}
+	
+	strong:hover {
+		color: #0088cc;
+	}
+	em {
+		display: none;
+	}
+
+	tr:hover em {
+		display: inline;
+	}
+	
+	tr:hover strong {
+		color: #0088cc;
+	}
+	a:link {
+		color: black;
+	}
+	a:visited {
+		color: #cccccc;
+	}
+	a:active {
+		color: green;
+	}
+	form input:focus {
+		border-color: #0088cc;
+	}
+	form input[required] {
+		background-color: #fcf8e3;
+	}
+	form input[type="password"] {
+		background-color: #f2dede;
+	}
+	form input[type="submit"] {
+		border-color: green;
+	}
+	#fullname {
+		background-color: #fcf8e3;
+	}
+	#year {
+		width: 100px;
+	}
+    </style>
+</head>
+
+    <body>
+    	<h1>Псевдоклассы: li:last-child и li:first-child</h1>
+        <ul class="target">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+        <p>Ссылка: <a href="https://htmlacademy.ru/courses/42/run/9">https://htmlacademy.ru/courses/42/run/9</a></p>
+        
+        <h1>Псевдокласс hover</h1>
+                <div class="cup-standings">
+            <h2>Личный зачёт кубка мира</h2>
+            <table>
+                <tr>
+                    <th>№</th>
+                    <th>Спортсмен</th>
+                    <th>Очки</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Мартен Фуркад <em>Франция</em></td>
+                    <td><strong>151</strong></td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Эмиль-Хегле Свендсен <em>Норвегия</em></td>
+                    <td><strong>121</strong></td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Алексис Бёф <em>Франция</em></td>
+                    <td><strong>110</strong></td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Арнд Пайффер <em>Германия</em></td>
+                    <td><strong>105</strong></td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Евгений Устюгов <em>Россия</em></td>
+                    <td><strong>104</strong></td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <p>Ссылка: <a href="https://htmlacademy.ru/courses/42/run/12">https://htmlacademy.ru/courses/42/run/12</a>	</p>
+        <h1>Псевдоклассы для ссылок</h1>
+        <p><a href="/courses/42/run/14">Эта ссылка посещена a:active</a>, так как ведёт на страницу с этим заданием.</p>
+        <p><a href="/never-visited">Эта ссылка ещё не посещена a:link</a>, так как ведёт на несуществующую страницу.</p>
+        <p>Кстати, для ссылок очень часто задают стили при наведении с помощью :hover.</p><br>
+        
+        <h1>Цвет рамки</h1>
+        <form class="login" action="https://echo.htmlacademy.ru" method="post">
+            <label for="login">Логин</label>
+            <input type="text" id="login" name="login">
+
+            <label for="password">Пароль</label>
+            <input type="password" id="password" name="password">
+
+            <input type="submit" value="Войти">
+        </form>
+        <p>Ссылка: <a href="https://htmlacademy.ru/courses/42/run/15">https://htmlacademy.ru/courses/42/run/15</a></p>
+		<h1>Селекторы по id</h1>
+	        <form class="login" action="https://echo.htmlacademy.ru" method="post">
+            <label for="fullname">Имя</label>
+            <input type="text" id="fullname" name="fullname">
+
+            <label for="year">Год рождения</label>
+            <input type="text" id="year" name="year">
+
+            <input type="submit" value="Войти">
+        </form>
+	<p>Итоговый <a href="PsevdoklassyTest.html">тест</a>. </p>
+    <p>Разбор HTML. <a href="http://forum.academy/t/selektory-chast-1-ispytanie-duel-18-18-podrobnoe-obyasnenie-resheniya-100/6016">http://forum.academy/t/selektory-chast-1-ispytanie-duel-18-18-podrobnoe-obyasnenie-resheniya-100/6016</a></p>
+
+    </body>
+</html>
